@@ -3,11 +3,13 @@ import './ContactMe.css';
 
 export default function ContactMe({ formData, onInputChange, onSubmit }) {
     return (
+    
     <div className="contact-container">
-        <h1>Contact</h1>
+        <h1>Get in touch!</h1>
         <form id="contact-form" onSubmit={onSubmit} method="POST">
+        
         <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Enter your name</label>
             <input
             type="text"
             className="form-control"
@@ -17,8 +19,9 @@ export default function ContactMe({ formData, onInputChange, onSubmit }) {
             onChange={(e) => onInputChange("name", e.target.value)}
             />
         </div>
+
         <div className="form-group">
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">Your email address</label>
             <input
             type="email"
             className="form-control"
@@ -29,8 +32,9 @@ export default function ContactMe({ formData, onInputChange, onSubmit }) {
             aria-describedby="emailHelp"
             />
         </div>
+
         <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Type a message below</label>
             <textarea
             className="form-control"
             id="message"
@@ -40,9 +44,11 @@ export default function ContactMe({ formData, onInputChange, onSubmit }) {
             onChange={(e) => onInputChange("message", e.target.value)}
             ></textarea>
         </div>
+
         <button type="submit" className="btn btn-primary">
             Submit
         </button>
+
         </form>
     </div>
     );

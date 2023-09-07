@@ -12,7 +12,7 @@ function App() {
     message: "",
   });
 
-  // Handle form input changes
+
   const handleInputChange = (name, value) => {
     setFormData({
       ...formData,
@@ -20,7 +20,6 @@ function App() {
     });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     // You can access form data using formData.name, formData.email, and formData.message here
