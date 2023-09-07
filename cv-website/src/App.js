@@ -22,9 +22,34 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can access form data using formData.name, formData.email, and formData.message here
-    // You can also perform any additional logic or API calls as needed
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        // Success: Reset the form or display a success message
+        console.log('Email sent successfully!');
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        // Error: Handle the error response
+        console.error('Email sending failed.');
+        // You can handle the error response and display an error message here
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
   };
+    
 
   return (
     <>
