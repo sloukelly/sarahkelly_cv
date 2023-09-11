@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path: "/Users/sarahkelly/Desktop/Various Git Repos/sarahkelly_cv/site.env"});
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -16,7 +16,7 @@ app.post('/api/send-email', (req, res) => {
 
   // creating a transporter
 const transporter = nodemailer.createTransport({
-    service: 'Outlook', 
+    service: 'outlook', 
     auth: {
         user: 'sarahkellydev@outlook.com', 
         pass: process.env.EMAIL_PASSWORD, 
