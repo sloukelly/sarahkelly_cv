@@ -91,7 +91,7 @@ const Experience = () => {
         <div className="company">Various positions</div>
         
         <div className="job-description">
-          <p>A background in retail and hospitality jobs gave me the foundational skills and hardworking mindset that allow me to thrive today. With a focus on product knowledge, customer relationships, team work and time management, these jobs provided transferrable skills that are still relevant today. </p>
+          <p>A background in retail and hospitality jobs gave me a strong foundational skill set. With a focus on product knowledge, customer relationships, team work and time management, these jobs provided transferrable skills that are still relevant today. </p>
           <ul style={{listStyleType: 'square'}}>
             <li>LUSH, White Rose - retail assistant.</li>
             <li>The Tetley, Leeds - cafe/bar associate, waitress, event staff.</li>

@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container style={{ width: "100%" }}>
+      <Container>
         <Routes>
           <Route
             path="/ContactMe"
@@ -67,6 +67,7 @@ function App() {
             }
           />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Container>
     </>

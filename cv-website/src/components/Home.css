@@ -1,9 +1,11 @@
-.text-center {
+.text-center h5 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
     height: 5vh;
+    font-weight: bold;
+    letter-spacing: .04em;
 }
 
 .headings h6 {

@@ -1,11 +1,14 @@
 import React from "react";
 import './ContactMe.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function ContactMe({ formData, onInputChange, onSubmit }) {
     return (
     
     <div className="contact-container">
-        <h1>Get in touch!</h1>
+        <h1 className="title">Say Hello!</h1>
         <form id="contact-form" onSubmit={onSubmit} method="POST">
         
         <div className="form-group">
@@ -21,7 +24,7 @@ export default function ContactMe({ formData, onInputChange, onSubmit }) {
         </div>
 
         <div className="form-group">
-            <label htmlFor="email">Your email address</label>
+            <label htmlFor="email">Email</label>
             <input
             type="email"
             className="form-control"
@@ -45,8 +48,9 @@ export default function ContactMe({ formData, onInputChange, onSubmit }) {
             ></textarea>
         </div>
 
-        <button type="submit" className="btn btn-primary">
-            Submit
+        <button type="submit" className="btn-primary">
+            Submit &nbsp;
+            <FontAwesomeIcon icon={faArrowRightLong} />
         </button>
 
         </form>
